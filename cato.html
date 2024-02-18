@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="assets/fav-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+    <title>Balaji-eStore</title>
+
+
+    <style>
+
+        
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:poppins;
+    box-sizing: border-box;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+}
+
+/*--NAVIGATION KE LIYE--*/
+
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+
+
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+
+
+.menu li a{
+    text-decoration: none;
+    color: #3b3b3b;;
+    padding: 3px 10px;
+    margin: 0px 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all ease 0.3s;
+
+    
+}
+
+.righ-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+
+
+}
+
+.righ-nav a span{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+
+
+
+.logo{
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #202020;
+
+}
+
+.logo span{
+   color: #40aa54;
+   font-size: 30px;
+}
+
+ .like span{
+    background-color: #fff0ee;
+    color: #ff6c57;
+    border-radius: 30px;
+
+}
+
+.cart span{
+    background-color: #ecf7ee;
+    color: #4eb060;
+    border-radius: 30px;
+}
+
+
+
+.menu li a:hover{
+    color:#40aa54;
+    transition: all ease 0.3s;
+    border-color: #40aa54;
+    box-shadow: 0px 0px 20px 0px red;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: transparent;
+
+}
+
+.list ul li{
+    background-color: rgb(252,219,252);
+    margin-left: 78px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    
+}
+.list h3{
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-right: 0px;
+
+}
+
+.list h3:hover{
+    transition: all  ease 0.3s;
+    font-size: 20px;
+
+}
+.list{
+    background-color:rgb(252,219,252);
+    border: 1px solid red;
+    border-radius: 13px;
+    margin-top: 0px;
+    margin-left: 43px;
+    padding: 0px;
+    margin-right: 43px;
+}
+
+.list:hover{
+    border: 1px solid red;
+    box-shadow: 0px 0px 20px 0px yellow;
+}
+
+.liuu{
+
+    border: none;
+
+}
+
+h4{
+    text-align: center;
+    text-transform:uppercase;
+    margin: 40px ;
+    background-color:#64e67c;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px red;
+}
+h2{
+    text-align: center;
+    background-color:rgb(252, 252, 161);
+    border-radius: 13px;
+    
+}
+
+       
+    </style>
+</head>
+<body>
+
+    <nav class="navigation">
+
+        <a href="bala.html" class="logo "><span>B</span>alaJi</a>
+
+        <ul class="menu">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="cato.html">Categories</a></li>
+            <li><a href="price.html">price list</a></li>
+            <li><a href="#">contact us </a></li>
+
+
+
+        </ul>
+
+        <!--RIGHT NAV CART-->
+
+        <div class="right-nav">
+
+            <!--LIKE ICON KE LIYE-->
+
+            <a href="#" class="like"><span class="material-symbols-outlined">
+                favorite
+                </span></a>
+            
+
+             <!--cart icon ke liye-->
+
+            <a href="#" class="cart"><span class="material-symbols-outlined">
+                shopping_cart
+                </span></a>
+            
+        </div>
+    </nav>
+
+    <!-- NAVIGATION PART YAHA END HUA -->
+
+<main>
+     <section class="list">
+    <h3><span id="list">अनाज</span></h3>
+    <ul>
+        <li>ब्राउन बासमती चावल</li>
+        <li>बासमती चावल</li>
+        <li>टूटा हुआ गेहूं</li>
+        <li>मुरमुरे (कुरमुरा)</li>
+        <li>चपटा चावल (पोहा)</li>
+        <li>रवा (गेहूं की मलाई, सूजी)</li>
+        <li>साबुत-गेहूं का आटा या आटा आटा (चपाती, पूरी और अन्य भारतीय फ्लैटब्रेड के लिए)</li>
+        <li>बेसन या चने का आटा</li>
+        <li>बाजरे का आटा</li>
+    </ul>
+    
+    <h3><span >दाल</span></h3>
+    <ul>
+        <li>मूंग दाल</li>
+        <li>मसूर की दाल</li>
+        <li>चना दाल</li>
+        <li>उड़द की दाल</li>
+        <li>तुवर दाल तूर दाल</li>
+        <li>राजमा (लाल राजमा)</li>
+        <li>छोले या छोले या गारबानो बीन्स (चना)</li>
+        <li>मोठ या मटकी बीन्स (छोटे छोटे ब्राउन बीन्स)</li>
+        <li>साबुत मूंग</li>
+        <li>काली आंखों वाले मटर या चावली बीन्स</li>
+        <li>वाल दाल</li>
+        <li>पूरा मसूर</li>
+        <li>मूंगफली</li>
+    </ul>
+    <h3><span ></span>मसाले<span ></span></h3>
+    <ul>
+        <li>लाल मिर्च पाउडर (पश्चिमी शैली की मिर्च में जोड़े जाने वाले मसाले के मिश्रण के लिए गलत नहीं होना चाहिए।  भारतीय लाल मिर्च पाउडर सिर्फ लाल मिर्च पाउडर है) .</li>
+        <li>लाल शिमला मिर्च (कश्मीरी मिर्च पाउडर एक अच्छा विकल्प है)</li>
+        <li>हल्दी पाउडर</li>
+        <li>जीरा</li>
+        <li>धनिया</li>
+        <li>काली सरसों</li>
+        <li>सौंफ</li>
+        <li>अजवायन</li>
+        <li>प्याज के बीज (कलौंजी)</li>
+        <li>सफेद खसखस</li>
+        <li>मेथी</li>
+        <li>सफेद तिल</li>
+        <li>केसर</li>
+        <li>इलायची की फली</li>
+        <li>(हरी इलाइची)</li>
+        <li>(काली इलाइची)</li>
+        <li>लौंग (लौंग)</li>
+        <li>(दालचीनी)</li>
+        <li>जायफल</li>
+        <li>हींग</li>
+        <li>गदा (जावित्री)</li>
+        <li>साबुत काली मिर्च</li>
+        <li>तेज पत्ता (तेज पत्ता)</li>
+        <li>साबुत सूखी लाल</li>
+    </ul>
+    <p>इसके अलावा आपको अपने दुकान में कुछ रेडीमेड मसाले भी रखने होंगे क्योंकि कुछ लोग रेडीमेड मसाला लेना पसंद करते हैं ऐसे में उन सभी मसाले का विवरण हम आपको नीचे दे रहा है। </p>
+    <ul>
+        <li>गरम मसाला</li>
+        <li>बिरयानी मसाला</li>
+        <li>पाव भाजी मसाला</li>
+        <li>सांभर पाउडर</li>
+        <li>रसम पाउडर</li>
+        <li>करी पाउडर</li>
+    </ul>
+    <h3><span class="list" ></span>तेल<span ></span></h3>
+    <ul>
+        <li>मूंगफली का तेल</li>
+        <li>तिल का तेल</li>
+        <li>नारियल का तेल</li>
+        <li>सरसों का तेल</li>
+    </ul>
+    <h3><span 
+        ></span>चावल और आटा की सूची
+        <span
+           ></span>
+    </h3>
+    <ul>
+        <li>आटा (Flour)</li>
+        <li>बाजरे का आटा (millet flour) </li>
+        <li>गेंहू का आटा (wheat flour)</li>
+        <li>मैदा आटा (maida flour)</li>
+        <li>ज्वार का आटा (sorghum flour)</li>
+        <li>चने का आटा (chickpea flour)</li>
+        <li>मक्के का आटा (corn flour)</li>
+        <li>रागी का आटा (Ragi flour)</li>
+        <li>मल्टीग्रेन आटा (multigrain flour)</li>
+        <li>सूजी (Semolina)</li>
+    </ul>
+    <h3><span  ></span> चावल (Rice)<span ></span></h3>
+    <ul>
+        <li>साधारण चावल (simple rice)</li>
+        <li>बासमती चावल (basmati rice)</li>
+        <li>कोलम राइस (Kolam Rice)</li>
+        <li>ब्रॉउन राइस (brown rice)</li>
+        <li>इडली राइस (Idli Rice)</li>
+        <li>डोसा राइस (dosa rice)</li>
+        <li>बिरयानी चावल (biryani rice)</li>
+    </ul>
+    <h3><span></span>डेयरी उत्पाद<span ></span></h3>
+    <ul>
+        <li>दूध</li>
+        <li>दही</li>
+        <li>पनीर</li>
+        <li>मक्खन</li>
+        <li>छाछ</li>
+        <li>घी</li>
+        <li>क्रीम</li>
+        <li>दूध आइसक्रीम</li>
+        <li>दूध पाउडर</li>
+    </ul>
+    <h3><span ></span>ड्राई फ्रूट<span ></span></h3>
+    <p>किराना का दुकान अगर आप खोलें हैं तो उसमें आपको ड्राई फूड भी रखने होंगे तभी जाकर आप अच्छा मुनाफा कमा पाएंगे उन सभी का विवरण हम आपको नीचे दे रहे हैं आइए जानते हैं। </p>
+    <ul>
+        <li>बादाम (almonds)</li>
+        <li>काजू (cashew nuts)</li>
+        <li>पिस्ता (pistachio)</li>
+        <li>किशमिश (Raisins)</li>
+        <li>नारियल (Coconuts)</li>
+        <li>मखाना (Fox Nut)</li>
+        <li>मुनक्का (raisins)</li>
+        <li>अखरोट (walnuts)</li>
+        <li>मुंगफली दाने (peanuts)</li>
+        <li>सुखी खजूर (dry dates)</li>
+        <li>सुखा अंजीर (dried figs)</li>
+        <li>सुखी खुबानी/ खुरमानी (dried apricots)</li>
+        <li>छोहारा (chhuhara)</li>
+    </ul>
+    <h3><span  ></span>सॉस केचप<span ></span></h3>
+    <ul>
+        <li>टमाटर सॉस (tomato sauce)</li>
+        <li>सोया सॉस (soy sauce)</li>
+        <li>पिज्जा सॉज (pizza sauce)</li>
+        <li>रेड चिली सॉस (red chili sauce)</li>
+        <li>ग्रीन चिली सॉस (Green Chili Sauce)</li>
+        <li>चिली एंड सोया सॉस</li>
+    </ul>
+    <h3><span ></span>बिस्कुट स्नैक्स
+        (Biscuit Snacks)<span ></span></h3>
+    <p>बिस्कुट स्नैक्स सुभह नास्ते के लिए भी बहुत बिकते है इसलिए general store items list तैयार कर रहे है तो इसे जरूर शामिल करे। </p>
+    <ul>
+        <li>नमकीन बिस्किट (Salted Biscuit)</li>
+        <li>क्रीम बिस्किट (Cream biscuit)</li>
+        <li>टोस्ट (toast)</li>
+        <li>खारी (Khari)</li>
+        <li>पारले जी (Parle g)</li>
+        <li>गुड डे (good day)</li>
+        <li>ओरियो (oreo)</li>
+    </ul>
+    <h3><span ></span>नमकीन और चिप्स (snacks and chips)
+        <span
+            ></span>
+    </h3>
+    
+    <ul>
+        <li>कुरकुरे (crunchy)</li>
+        <li>सोया स्टिकस (Soy sticks)</li>
+        <li>सेव भुजिया (sev bhujia)</li>
+        <li>आलू चिप्स (Potato chips)</li>
+        <li>लैस चिप्स (Lays chips)</li>
+        <li>पॉप कॉर्न (pop corn)</li>
+        <li>केले चिप्स (Banana chips)</li>
+    </ul>
+    <h3><span ></span>चाय और कॉफी<span ></span></h3>
+    <ul>
+        <li>लीफ टी (leaf tea)</li>
+        <li>ग्रीन टी (green tea)</li>
+        <li>हर्बल टी (Herbal tea)</li>
+        <li>काफी (Coffee)</li>
+        <li>रेड लेबल (red lebal)</li>
+        <li>टाटा टी (tata tea )</li>
+        <li>टी बैग (Tea bags)</li>
+    </ul>
+    <h3><span ></span>कोल्डड्रिंक (Cold Drinks)<span ></span></h3>
+    <ul>
+        <li>थम्स अप (Thumbs up)</li>
+        <li>स्प्राइट (Sprite)</li>
+        <li>माजा (Maja)</li>
+        <li>लस्सी (Lassi)</li>
+        <li>छांछ (buttermilk)</li>
+        <li>फ्लेवर्ड वाटर (flavored water)</li>
+        <li>एनर्जी ड्रिंक (energy drink)</li>
+        <li>फिज़ज़ (fizz)</li>
+        <li>अमूल कुल</li>
+    </ul>
+    <h3><span ></span>टूथपेस्ट<span ></span></h3>
+    <ul>
+        <li>कोलगेट (Colgate )</li>
+        <li>दंतकान्ति (Dankanti)</li>
+        <li>डाबर रेड पेस्ट (Douber red paste)</li>
+        <li>क्लोजअप(Close-up)</li>
+        <li>टँग क्लीनर (tongue cleaner)</li>
+        <li>माउथवाश (mouthwash)</li>
+    </ul>
+    <h3><span ></span></h3>
+    <ul>
+        <li>सन स्क्रीम</li>
+        <li>बॉडी लोशन</li>
+        <li>टेलकम पाउडर</li>
+        <li>फेस वॉश</li>
+        <li>क्रीम्स</li>
+        <li>लिप केअर</li>
+    </ul>
+    <h3><span ></span>परफ्यूम डीओ<span ></span></h3>
+    <ul>
+        <li>वीमेन डीओ (women deos)</li>
+        <li>मेंन डीओ (mens deos)</li>
+        <li>बॉडी स्प्रेय (body spray)</li>
+        <li>परफ्यूम (Perfume)</li>
+        <li>Axe Man deos</li>
+        <li>Fogg deos</li>
+        <li>Niveo Man and woman deos</li>
+    </ul>
+    <h3><span ></span>सफाई का सामान<span ></span></h3>
+    <ul>
+        <li>बर्तन धोने का साबुन (dish soap)</li>
+        <li>बर्तन धोने का पाउडर (dish washing powder)</li>
+        <li>बर्तन धोने का लिक्विड (dishwashing liquid)</li>
+        <li>बर्तन साफ करने की जाली (dish net)</li>
+        <li>कपडे धोने का साबुन (laundry soap)</li>
+        <li>कपडे धोने का पाउडर (laundry powder)</li>
+        <li>नहाने का साबुन (bath soap)</li>
+        <li>छत क्लीनर( roof cleaner)</li>
+        <li>फर्श क्लीनर (Floor Cleaner)</li>
+        <li>फिनायल (phenyl)</li>
+        <li>रूम फ्रेशनर (Room Freshener)</li>
+        <li>जीभ क्लीनर (Tongue Cleaner)</li>
+        <li>टॉयलेट ब्रश (Toilet Brush)</li>
+        <li>गुड नाईट आल आउट (Good Night All Out)</li>
+        <li>नेफ्थेलीन की गोलियां (naphthalene pills)</li>
+        <li>डस्टबिन (Dustbin)</li>
+    </ul>
+    <h3><span ></span>पूजा की सामग्री<span ></span></h3>
+    <ul>
+        <li>धूप (Incense)</li>
+        <li>अगरबत्ती (incense sticks)</li>
+        <li>माचिस (Matchbox)</li>
+        <li>दीप तेल (Deep Oil)</li>
+        <li>सूती धागा (cotton thread)</li>
+        <li>रूई (cotton woo)</li>
+        <li>रुई की बत्ती (cotton wick)</li>
+        <li>कुमकुम (kumkum)</li>
+        <li>चंदन (Chandan)</li>
+        <li>कपूर (Kapoor)</li>
+    </ul>
+    <h3><span ></span>कॉस्मेटिक आइटम<span ></span></h3>
+    <ul>
+        <li>Deodorant</li>
+        <li>नेल कटर (Nail Cutter)</li>
+        <li>नेल पॉलिश (Nail Polish)</li>
+        <li>परफ्यूम (Perfume)</li>
+        <li>पाउडर (Powder)</li>
+        <li>फेस क्रीम (Face Cream)</li>
+        <li>बिंदी (Dot)</li>
+        <li>बॉडी लोशन (Lotion Pour Le Corps)</li>
+        <li>ब्लेड (Blade)</li>
+        <li>मस्कारा (Mascara)</li>
+        <li>मेहंदी (Mehndi)</li>
+        <li>लिप बाम (Lip Balm)</li>
+        <li>लिप लाइनर (Lip Liner)</li>
+        <li>लिपस्टिक (Lipstick)</li>
+        <li>शेविंग क्रीम (Shaving Cream)</li>
+        <li>शैंपू (Shampoo )</li>
+        <li>सिंदूर (Vermilion)</li>
+        <li>सेफ्टी पिन (Safety Pin)</li>
+        <li>हेयर ऑयल (Hair Oil)</li>
+        <li>हेयर डाई (Hair Dye)</li>
+    </ul>
